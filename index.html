@@ -8,7 +8,7 @@
 <body>
   <video autoplay style="max-width: 100vw;height: 100vh;margin: 0 auto;display: block;border: solid 5px #000;"></video>
   <script>
-    const video = document.querySelector('video');
+    var video = document.querySelector('video');
     navigator.mediaDevices.getUserMedia({
       video: true
     })
@@ -17,7 +17,7 @@
     })
     .catch(function(err) {
       console.error(err);
-      alert("You might have not given this site permission to use your camera")
+      alert("You might have not given this site permission to use your camera");
     });
   </script>
 </body>
